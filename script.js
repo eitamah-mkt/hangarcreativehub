@@ -1,40 +1,4 @@
 // ============================================
-// REDIRECIONAMENTO HTTPS + WWW (EXECUTA PRIMEIRO)
-// ============================================
-(function() {
-    var host = window.location.hostname;
-    var protocol = window.location.protocol;
-    var targetURL = 'https://www.hangarcreativehub.com' + 
-                    window.location.pathname + 
-                    window.location.search + 
-                    window.location.hash;
-    
-    // Verifica se precisa redirecionar
-    var needsRedirect = false;
-    
-    // 1. Se for HTTP (não HTTPS)
-    if (protocol === 'http:') {
-        needsRedirect = true;
-    }
-    
-    // 2. Se for apex domain (sem www)
-    if (host === 'hangarcreativehub.com') {
-        needsRedirect = true;
-    }
-    
-    // 3. Se for HTTPS mas sem www
-    if (host === 'hangarcreativehub.com' && protocol === 'https:') {
-        needsRedirect = true;
-    }
-    
-    // Se precisar redirecionar, faz IMEDIATAMENTE
-    if (needsRedirect) {
-        window.location.replace(targetURL);
-        return; // Para a execução do resto do script
-    }
-})();
-
-// ============================================
 // Sistema de Tradução Funcional - VERSÃO FINAL
 // ============================================
 document.addEventListener('DOMContentLoaded', function() {
