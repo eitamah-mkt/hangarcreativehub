@@ -1,67 +1,106 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hangar Creative Hub</title>
-    
-    <!-- Fontes -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hangar Creative Hub | Agência de Comunicação e Tecnologia</title>
+<meta name="description" content="Hangar Creative Hub: agência de branding, jornalismo, conteúdo, performance e design que faz você e sua empresa voarem mais alto. Estratégia, produção e resultado, tudo sob o mesmo teto.">
+<meta property="og:title" content="Hangar Creative Hub">
+<meta property="og:description" content="Você e sua empresa voando mais alto em comunicação e tecnologia.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://www.hangarcreativehub.com/">
+<link rel="icon" href="images/logo-hangar.png">
+
+<!-- Fontes -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Space+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- CSS -->
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Hangar Creative Hub",
+  "url": "https://www.hangarcreativehub.com/",
+  "logo": "https://www.hangarcreativehub.com/images/logo-hangar.png",
+  "description": "Agência de branding, jornalismo, conteúdo, performance e design.",
+  "sameAs": ["https://www.instagram.com/hangarcreativehub/"],
+  "legalName": "Hangar Creative Hub LTDA",
+  "taxID": "55.373.242/0001-12",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Rua Frei Mansueto, 1289 - Varjota",
+    "addressLocality": "Fortaleza",
+    "addressRegion": "CE",
+    "postalCode": "60175-157",
+    "addressCountry": "BR"
+  }
+}
+</script>
 </head>
 <body>
 
-    <!-- Controles VISÍVEIS - 3 QUADRADINHOS -->
-    <div class="controls">
-        <div class="language-selector">
-            <button class="lang-btn pt active" data-lang="pt" title="Português">
-                <img src="images/brasil.png" alt="Português" class="flag-icon">
-            </button>
-            <button class="lang-btn en" data-lang="en" title="English">
-                <img src="images/eua.png" alt="English" class="flag-icon">
-            </button>
-            <button class="lang-btn es" data-lang="es" title="Español">
-                <img src="images/es.png" alt="Español" class="flag-icon">
-            </button>
-        </div>
+<!-- TOPO FIXO -->
+<header class="topbar">
+    <a href="#topo" class="topbar-logo">
+        <img src="images/logo-hangar.png" alt="Hangar Creative Hub">
+        <span>HANGAR CREATIVE HUB</span>
+    </a>
+
+    <nav class="topbar-nav">
+        <a href="#sobre" data-i18n="nav.sobre">Sobre</a>
+        <a href="#servicos" data-i18n="nav.servicos">Serviços</a>
+        <a href="#cases" data-i18n="nav.cases">Cases</a>
+        <a href="#metodo" data-i18n="nav.metodo">Método</a>
+        <a href="#contato" data-i18n="nav.contato">Contato</a>
+    </nav>
+
+    <div class="language-selector">
+        <button class="lang-btn pt active" data-lang="pt" title="Português">
+            <img src="images/brasil.png" alt="Português" class="flag-icon">
+        </button>
+        <button class="lang-btn en" data-lang="en" title="English">
+            <img src="images/eua.png" alt="English" class="flag-icon">
+        </button>
+        <button class="lang-btn es" data-lang="es" title="Español">
+            <img src="images/es.png" alt="Español" class="flag-icon">
+        </button>
     </div>
+</header>
 
-    <div class="container">
-        
-        <!-- CONTEÚDO PORTUGUÊS -->
-        <div id="content-pt" class="language-content active">
-            <!-- LOGO -->
-            <img src="images/logo-hangar" alt="Hangar Creative Hub" class="profile-pic">
+<main id="topo">
 
-            <!-- TÍTULO -->
-            <div class="title-container">
-                <h1>HANGAR CREATIVE HUB</h1>
+    <!-- HERO / CARTÃO DE LINKS -->
+    <section class="hero">
+        <div class="hero-runway" aria-hidden="true"></div>
+        <div class="hero-inner">
+            <img src="images/logo-hangar.png" alt="Hangar Creative Hub" class="profile-pic">
+
+            <p class="eyebrow" data-i18n="hero.eyebrow">ROTA · COMUNICAÇÃO &amp; TECNOLOGIA</p>
+
+            <h1 id="typingTitle">HANGAR CREATIVE HUB</h1>
+
+            <p class="main-description" data-i18n="hero.subtitle">Você e sua empresa voando mais alto em comunicação e tecnologia.</p>
+
+            <div class="bubbles-container">
+                <span class="bubble" data-i18n="bubble.1">Produção de Conteúdo</span>
+                <span class="bubble" data-i18n="bubble.2">Jornalismo</span>
+                <span class="bubble" data-i18n="bubble.3">Branding</span>
+                <span class="bubble" data-i18n="bubble.4">Estratégia</span>
+                <span class="bubble" data-i18n="bubble.5">Fotografia</span>
+                <span class="bubble" data-i18n="bubble.6">Audiovisual</span>
+                <span class="bubble" data-i18n="bubble.7">Social Media</span>
+                <span class="bubble" data-i18n="bubble.8">Design</span>
             </div>
-            
-            <!-- DESCRIÇÃO COMPACTA -->
-            <div class="description-compact">
-                <p class="main-description">Você e sua empresa voando mais alto em comunicação e tecnologia</p>
-                <div class="bubbles-container">
-                    <span class="bubble">Produção de Conteúdo</span>
-                    <span class="bubble">Jornalismo</span>
-                    <span class="bubble">Branding</span>
-                    <span class="bubble">Estratégia</span>
-                    <span class="bubble">Fotografia</span>
-                    <span class="bubble">Audiovisual</span>
-                    <span class="bubble">Social Media</span>
-                    <span class="bubble">Design</span>
-                </div>
-            </div>
 
-            <!-- BOTÕES -->
             <div class="buttons-container">
                 <a href="Portifolio/Portifolio Hangar.pdf" target="_blank" class="link-button portfolio" rel="noopener noreferrer">
                     <div class="link-button-content">
                         <i class="far fa-file-alt"></i>
-                        <span class="button-text">Portfólio</span>
+                        <span class="button-text" data-i18n="btn.portfolio">Portfólio</span>
                     </div>
                 </a>
 
@@ -69,7 +108,7 @@
                    class="link-button cap" target="_blank" rel="noopener noreferrer">
                     <div class="link-button-content">
                         <i class="far fa-user"></i>
-                        <span class="button-text">Fale com a Cap</span>
+                        <span class="button-text" data-i18n="btn.cap">Fale com a Cap</span>
                     </div>
                 </a>
 
@@ -77,140 +116,277 @@
                    class="link-button" target="_blank" rel="noopener noreferrer">
                     <div class="link-button-content">
                         <i class="fas fa-rocket"></i>
-                        <span class="button-text">Fale com o time para voar mais alto</span>
+                        <span class="button-text" data-i18n="btn.team">Fale com o time para voar mais alto</span>
                     </div>
                 </a>
             </div>
 
-            <!-- REDES SOCIAIS -->
             <div class="social-links">
                 <a href="https://www.instagram.com/hangarcreativehub/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
                     <i class="fab fa-instagram"></i>
                 </a>
             </div>
+
+            <a class="scroll-cue" href="#sobre" aria-label="Rolar para saber mais">
+                <span data-i18n="hero.scroll">conheça a agência</span>
+                <i class="fas fa-chevron-down"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- PAINEL DE APTIDÕES ESTILO QUADRO DE VOOS -->
+    <section class="board" aria-label="Aptidões">
+        <div class="board-track">
+            <span data-i18n="board.1">BRANDING</span>
+            <span>·</span>
+            <span data-i18n="board.2">FOTOGRAFIA</span>
+            <span>·</span>
+            <span data-i18n="board.3">SOCIABILIDADE</span>
+            <span>·</span>
+            <span data-i18n="board.4">DESIGN</span>
+            <span>·</span>
+            <span data-i18n="board.5">AUDIOVISUAL</span>
+            <span>·</span>
+            <span data-i18n="board.6">CONSULTORIA</span>
+            <span>·</span>
+            <span data-i18n="board.7">TRÁFEGO PAGO</span>
+            <span>·</span>
+            <span data-i18n="board.8">WEB DESIGN</span>
+            <span>·</span>
+            <span data-i18n="board.9">PROGRAMAÇÃO</span>
+            <span>·</span>
+            <span data-i18n="board.10">JORNALISMO DIGITAL</span>
+            <span>·</span>
+        </div>
+    </section>
+
+    <!-- SOBRE -->
+    <section id="sobre" class="section section-light sobre">
+        <p class="eyebrow" data-i18n="sobre.eyebrow">TRIPULAÇÃO</p>
+        <h2 data-i18n="sobre.titulo">Quem está na cabine</h2>  <!-- Título original mantido -->
+        <p class="section-lead" data-i18n="sobre.lead">A Hangar Creative Hub nasceu para ser o hub que reúne comunicação e tecnologia num só lugar, evitando que empresas precisem contratar vários fornecedores soltos para contar a própria história. O time reúne jornalismo, design, fotografia, performance e tecnologia sob um mesmo método, para que cada entrega saia coerente com a anterior.</p>
+    </section>
+
+    <!-- SERVIÇOS -->
+    <section id="servicos" class="section section-light">
+        <p class="eyebrow" data-i18n="servicos.eyebrow">CARTA DE SERVIÇOS</p>
+        <h2 data-i18n="servicos.titulo">O que decola com a gente</h2>
+        <p class="section-lead" data-i18n="servicos.lead">Da estratégia à entrega, cada serviço tem um dono, um método e um resultado esperado — nada de pacote genérico.</p>
+
+        <div class="cards-grid">
+            <article class="service-card">
+                <i class="fas fa-bullseye"></i>
+                <h3 data-i18n="servico.branding.titulo">Branding</h3>
+                <p data-i18n="servico.branding.desc">Identidade visual, naming e reposicionamento de marca com consistência do logo ao ponto de venda.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-newspaper"></i>
+                <h3 data-i18n="servico.jornalismo.titulo">Jornalismo</h3>
+                <p data-i18n="servico.jornalismo.desc">Conteúdo com apuração e autoridade editorial para marcas que querem ser fonte, não só anunciante.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-camera-retro"></i>
+                <h3 data-i18n="servico.fotografia.titulo">Fotografia</h3>
+                <p data-i18n="servico.fotografia.desc">Produção de imagem para produto, gastronomia, indústria e institucional, com direção de arte própria.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-video"></i>
+                <h3 data-i18n="servico.audiovisual.titulo">Audiovisual</h3>
+                <p data-i18n="servico.audiovisual.desc">Roteiro, filmagem e edição para redes, institucional e campanhas com formato pensado por canal.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-hashtag"></i>
+                <h3 data-i18n="servico.social.titulo">Social Media</h3>
+                <p data-i18n="servico.social.desc">Planejamento editorial, produção e gestão de comunidade com calendário e métricas mensais.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-chart-line"></i>
+                <h3 data-i18n="servico.performance.titulo">Performance</h3>
+                <p data-i18n="servico.performance.desc">Tráfego pago e leitura de indicadores para transformar audiência em oportunidade de negócio.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-pen-ruler"></i>
+                <h3 data-i18n="servico.design.titulo">Design</h3>
+                <p data-i18n="servico.design.desc">Peças gráficas, manipulação de imagem e materiais de campanha alinhados à identidade da marca.</p>
+            </article>
+            <article class="service-card">
+                <i class="fas fa-compass"></i>
+                <h3 data-i18n="servico.estrategia.titulo">Estratégia</h3>
+                <p data-i18n="servico.estrategia.desc">Diagnóstico, posicionamento e plano de comunicação com metas claras antes de qualquer produção.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- CASES -->
+    <section id="cases" class="section section-dark">
+        <p class="eyebrow" data-i18n="cases.eyebrow">DIÁRIO DE BORDO</p>
+        <h2 data-i18n="cases.titulo">Cases que já voaram</h2>
+        <p class="section-lead" data-i18n="cases.lead">Um recorte de projetos reais, com problema, estratégia, execução e resultado — do jeito que quem contrata precisa ver.</p>
+
+        <div class="case-carousel case-carousel-hero" data-autoplay="4000">
+            <div class="case-carousel-track">
+                <div class="case-slide"><img src="images/cases/edro-aplicacao.jpg" loading="lazy" alt="Identidade EDRO aplicada em frota, uniformes, cartões e crachás"></div>
+                <div class="case-slide"><img src="images/cases/gastronomia-marca.jpg" loading="lazy" alt="Identidade visual criada para a chef Marie Anne Bauer"></div>
+                <div class="case-slide"><img src="images/cases/gastronomia-instagram.jpg" loading="lazy" alt="Perfil e publicação no Instagram da chef Marie Anne Bauer"></div>
+                <div class="case-slide"><img src="images/cases/performance-insights.jpg" loading="lazy" alt="Insights de alcance de publicações — 49,4 mil, 69,8 mil e 63,3 mil contas alcançadas"></div>
+                <div class="case-slide"><img src="images/cases/jornalismo-entrevista.jpg" loading="lazy" alt="Entrevista em vídeo produzida com técnica jornalística"></div>
+                <div class="case-slide"><img src="images/cases/doc-antes-depois.jpg" loading="lazy" alt="Fachada antes e depois do trabalho da Hangar"></div>
+            </div>
+            <button type="button" class="case-nav prev" aria-label="Imagem anterior"><i class="fas fa-chevron-left"></i></button>
+            <button type="button" class="case-nav next" aria-label="Próxima imagem"><i class="fas fa-chevron-right"></i></button>
+            <div class="case-dots"></div>
         </div>
 
-        <!-- CONTEÚDO INGLÊS -->
-        <div id="content-en" class="language-content">
-            <!-- LOGO -->
-            <img src="images/logo-hangar" alt="Hangar Creative Hub" class="profile-pic">
+        <div class="cases-grid">
+            <article class="case-card">
+                <div class="case-tag" data-i18n="case1.tag">REBRANDING · EDRO</div>
+                <h3 data-i18n="case1.titulo">Reposicionamento de marca</h3>
+                <dl>
+                    <dt data-i18n="case.problema">Problema</dt>
+                    <dd data-i18n="case1.problema">Identidade visual desatualizada, sem consistência entre logo, frota e uniformes.</dd>
+                    <dt data-i18n="case.estrategia">Estratégia</dt>
+                    <dd data-i18n="case1.estrategia">Rebranding completo com novo símbolo, paleta e sistema de aplicação por ponto de contato.</dd>
+                    <dt data-i18n="case.execucao">Execução</dt>
+                    <dd data-i18n="case1.execucao">Redesenho do logo, aplicação em frota, uniformes, papelaria e brindes institucionais.</dd>
+                    <dt data-i18n="case.resultado">Resultado</dt>
+                    <dd data-i18n="case1.resultado">Marca padronizada em todos os pontos de contato, com percepção mais profissional. <em data-i18n="case.metricaplaceholder">[inserir métrica real de resultado]</em></dd>
+                </dl>
+            </article>
 
-            <!-- TÍTULO -->
-            <div class="title-container">
-                <h1>HANGAR CREATIVE HUB</h1>
-            </div>
-            
-            <!-- DESCRIÇÃO COMPACTA -->
-            <div class="description-compact">
-                <p class="main-description">You and your company flying higher in communication and technology</p>
-                <div class="bubbles-container">
-                    <span class="bubble">Content Production</span>
-                    <span class="bubble">Journalism</span>
-                    <span class="bubble">Branding</span>
-                    <span class="bubble">Strategy</span>
-                    <span class="bubble">Photography</span>
-                    <span class="bubble">Audiovisual</span>
-                    <span class="bubble">Social Media</span>
-                    <span class="bubble">Design</span>
+            <article class="case-card">
+                <div class="case-tag" data-i18n="case2.tag">IDENTIDADE VISUAL · GASTRONOMIA</div>
+                <h3 data-i18n="case2.titulo">Marca para novo ponto gastronômico</h3>
+                <dl>
+                    <dt data-i18n="case.problema">Problema</dt>
+                    <dd data-i18n="case2.problema">Negócio novo sem identidade visual definida para abertura de loja.</dd>
+                    <dt data-i18n="case.estrategia">Estratégia</dt>
+                    <dd data-i18n="case2.estrategia">Construção de marca do zero: naming, logotipo e linguagem visual para fachada e redes.</dd>
+                    <dt data-i18n="case.execucao">Execução</dt>
+                    <dd data-i18n="case2.execucao">Identidade aplicada em fachada, cardápio, embalagens e conteúdo de abertura.</dd>
+                    <dt data-i18n="case.resultado">Resultado</dt>
+                    <dd data-i18n="case2.resultado">Abertura com identidade coesa e pronta para escalar para novas unidades. <em data-i18n="case.metricaplaceholder">[inserir métrica real de resultado]</em></dd>
+                </dl>
+            </article>
+
+            <article class="case-card">
+                <div class="case-tag" data-i18n="case3.tag">PERFORMANCE · SOCIAL</div>
+                <h3 data-i18n="case3.titulo">Leitura de dados para redes sociais</h3>
+                <dl>
+                    <dt data-i18n="case.problema">Problema</dt>
+                    <dd data-i18n="case3.problema">Cliente produzia conteúdo sem acompanhar evolução de métricas e aptidões dos formatos.</dd>
+                    <dt data-i18n="case.estrategia">Estratégia</dt>
+                    <dd data-i18n="case3.estrategia">Painel de performance com leitura mensal de evolução e recomendação de ajuste de rota.</dd>
+                    <dt data-i18n="case.execucao">Execução</dt>
+                    <dd data-i18n="case3.execucao">Relatórios visuais e reuniões periódicas de leitura de indicadores com o cliente.</dd>
+                    <dt data-i18n="case.resultado">Resultado</dt>
+                    <dd data-i18n="case3.resultado">Decisões de conteúdo passaram a ser orientadas por dado, não por achismo. <em data-i18n="case.metricaplaceholder">[inserir métrica real de resultado]</em></dd>
+                </dl>
+            </article>
+
+            <article class="case-card">
+                <div class="case-tag" data-i18n="case4.tag">CONTEÚDO · AUTORIDADE JORNALÍSTICA</div>
+                <h3 data-i18n="case4.titulo">Conteúdo com apuração jornalística</h3>
+                <dl>
+                    <dt data-i18n="case.problema">Problema</dt>
+                    <dd data-i18n="case4.problema">Marca com conteúdo genérico, sem diferenciação frente a concorrentes do setor.</dd>
+                    <dt data-i18n="case.estrategia">Estratégia</dt>
+                    <dd data-i18n="case4.estrategia">Pauta e produção de conteúdo com técnica jornalística para gerar autoridade no setor.</dd>
+                    <dt data-i18n="case.execucao">Execução</dt>
+                    <dd data-i18n="case4.execucao">Produção fotográfica e de texto em campo, com fontes reais e checagem de informação.</dd>
+                    <dt data-i18n="case.resultado">Resultado</dt>
+                    <dd data-i18n="case4.resultado">Conteúdo com credibilidade editorial, diferente do padrão publicitário do setor. <em data-i18n="case.metricaplaceholder">[inserir métrica real de resultado]</em></dd>
+                </dl>
+            </article>
+        </div>
+
+        <a href="Portifolio/Portifolio Hangar.pdf" target="_blank" rel="noopener noreferrer" class="ghost-button">
+            <span data-i18n="cases.cta">Ver portfólio completo</span> <i class="fas fa-arrow-right"></i>
+        </a>
+    </section>
+
+    <!-- MÉTODO -->
+    <section id="metodo" class="section section-light">
+        <p class="eyebrow" data-i18n="metodo.eyebrow">PLANO DE VOO</p>
+        <h2 data-i18n="metodo.titulo">Como o trabalho decola</h2>
+        <p class="section-lead" data-i18n="metodo.lead">Um método fixo por trás de cada projeto, independente do tamanho da empresa ou do serviço contratado.</p>
+
+        <ol class="flightpath">
+            <li>
+                <span class="leg">01 · DIAGNÓSTICO</span>
+                <h3 data-i18n="metodo1.titulo">Diagnóstico</h3>
+                <p data-i18n="metodo1.desc">Levantamento de marca, concorrência e maturidade digital antes de propor qualquer ação.</p>
+            </li>
+            <li>
+                <span class="leg">02 · ESTRATÉGIA</span>
+                <h3 data-i18n="metodo2.titulo">Estratégia</h3>
+                <p data-i18n="metodo2.desc">Plano de comunicação com prioridades, canais e metas definidas junto com o cliente.</p>
+            </li>
+            <li>
+                <span class="leg">03 · PRODUÇÃO</span>
+                <h3 data-i18n="metodo3.titulo">Produção</h3>
+                <p data-i18n="metodo3.desc">Execução de branding, conteúdo, fotografia e audiovisual dentro do plano definido.</p>
+            </li>
+            <li>
+                <span class="leg">04 · PERFORMANCE</span>
+                <h3 data-i18n="metodo4.titulo">Performance</h3>
+                <p data-i18n="metodo4.desc">Acompanhamento de métricas e ajuste de rota com relatórios periódicos.</p>
+            </li>
+        </ol>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato" class="section section-light contato">
+        <p class="eyebrow" data-i18n="contato.eyebrow">TORRE DE CONTROLE</p>
+        <h2 data-i18n="contato.titulo">Pronto para decolar?</h2>
+        <p class="section-lead" data-i18n="contato.lead">Fale com o time e conte o que sua empresa precisa comunicar.</p>
+        <div class="buttons-container narrow">
+            <a href="https://api.whatsapp.com/send?phone=558588670785&text=Olá! Gostaria de falar com a Cap da Hangar Creative Hub."
+               class="link-button cap" target="_blank" rel="noopener noreferrer">
+                <div class="link-button-content">
+                    <i class="far fa-user"></i>
+                    <span class="button-text" data-i18n="btn.cap">Fale com a Cap</span>
                 </div>
-            </div>
-
-            <!-- BOTÕES -->
-            <div class="buttons-container">
-                <a href="Portifolio/Portifolio Hangar.pdf" target="_blank" class="link-button portfolio" rel="noopener noreferrer">
-                    <div class="link-button-content">
-                        <i class="far fa-file-alt"></i>
-                        <span class="button-text">Portfolio</span>
-                    </div>
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=558588670785&text=Hello! I would like to speak with the Cap of Hangar Creative Hub."
-                   class="link-button cap" target="_blank" rel="noopener noreferrer">
-                    <div class="link-button-content">
-                        <i class="far fa-user"></i>
-                        <span class="button-text">Speak with the Cap</span>
-                    </div>
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=5511998933401&text=Hello! I want to talk to the Hangar Creative Hub team and fly higher."
-                   class="link-button" target="_blank" rel="noopener noreferrer">
-                    <div class="link-button-content">
-                        <i class="fas fa-rocket"></i>
-                        <span class="button-text">Talk to the team to fly higher</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- REDES SOCIAIS -->
-            <div class="social-links">
-                <a href="https://www.instagram.com/hangarcreativehub/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
-        </div>
-
-        <!-- CONTEÚDO ESPANHOL -->
-        <div id="content-es" class="language-content">
-            <!-- LOGO -->
-            <img src="images/logo-hangar" alt="Hangar Creative Hub" class="profile-pic">
-
-            <!-- TÍTULO -->
-            <div class="title-container">
-                <h1>HANGAR CREATIVE HUB</h1>
-            </div>
-            
-            <!-- DESCRIÇÃO COMPACTA -->
-            <div class="description-compact">
-                <p class="main-description">Tú y tu empresa volando más alto en comunicación y tecnología</p>
-                <div class="bubbles-container">
-                    <span class="bubble">Producción de Contenido</span>
-                    <span class="bubble">Periodismo</span>
-                    <span class="bubble">Branding</span>
-                    <span class="bubble">Estrategia</span>
-                    <span class="bubble">Fotografía</span>
-                    <span class="bubble">Audiovisual</span>
-                    <span class="bubble">Social Media</span>
-                    <span class="bubble">Diseño</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5511998933401&text=Olá! Quero falar com o time da Hangar Creative Hub e voar mais alto."
+               class="link-button" target="_blank" rel="noopener noreferrer">
+                <div class="link-button-content">
+                    <i class="fas fa-rocket"></i>
+                    <span class="button-text" data-i18n="btn.team">Fale com o time para voar mais alto</span>
                 </div>
-            </div>
-
-            <!-- BOTÕES -->
-            <div class="buttons-container">
-                <a href="Portifolio/Portifolio Hangar.pdf" target="_blank" class="link-button portfolio" rel="noopener noreferrer">
-                    <div class="link-button-content">
-                        <i class="far fa-file-alt"></i>
-                        <span class="button-text">Portafolio</span>
-                    </div>
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=558588670785&text=¡Hola! Me gustaría hablar con la Cap de Hangar Creative Hub."
-                   class="link-button cap" target="_blank" rel="noopener noreferrer">
-                    <div class="link-button-content">
-                        <i class="far fa-user"></i>
-                        <span class="button-text">Habla con la Cap</span>
-                    </div>
-                </a>
-
-                <a href="https://api.whatsapp.com/send?phone=5511998933401&text=¡Hola! Quiero hablar con el equipo de Hangar Creative Hub y volar más alto."
-                   class="link-button" target="_blank" rel="noopener noreferrer">
-                    <div class="link-button-content">
-                        <i class="fas fa-rocket"></i>
-                        <span class="button-text">Habla con el equipo para volar mais alto</span>
-                    </div>
-                </a>
-            </div>
-
-            <!-- REDES SOCIAIS -->
-            <div class="social-links">
-                <a href="https://www.instagram.com/hangarcreativehub/" class="social-icon" aria-label="Instagram" target="_blank" rel="noopener noreferrer">
-                    <i class="fab fa-instagram"></i>
-                </a>
-            </div>
+            </a>
         </div>
+    </section>
 
+</main>
+
+<!-- RODAPÉ / TRANSPARÊNCIA INSTITUCIONAL -->
+<footer class="site-footer">
+    <div class="footer-grid">
+        <div>
+            <img src="images/logo-hangar.png" alt="Hangar Creative Hub" class="footer-logo">
+            <p data-i18n="footer.tagline">Comunicação e tecnologia sob o mesmo teto.</p>
+        </div>
+        <div>
+            <h4 data-i18n="footer.institucional">Institucional</h4>
+            <p data-i18n="footer.razaosocial">Razão social: Hangar Creative Hub LTDA</p>
+            <p data-i18n="footer.cnpj">CNPJ: 55.373.242/0001-12</p>
+            <p data-i18n="footer.endereco">Endereço: Rua Frei Mansueto, 1289 - Varjota, Fortaleza - CE, 60175-157</p>
+        </div>
+        <div>
+            <h4 data-i18n="footer.contato">Contato</h4>
+            <p data-i18n="footer.email">E-mail: contact@hangarcreativehub.com</p>
+            <p><a href="https://api.whatsapp.com/send?phone=558588670785&text=Olá! Gostaria de falar com a Cap da Hangar Creative Hub." target="_blank" rel="noopener noreferrer">WhatsApp (Cap): (85) 8867-0785</a></p>
+            <p><a href="https://api.whatsapp.com/send?phone=5511998933401&text=Olá! Quero falar com o time da Hangar Creative Hub e voar mais alto." target="_blank" rel="noopener noreferrer">WhatsApp (Time): (11) 99893-3401</a></p>
+            <p><a href="https://www.instagram.com/hangarcreativehub/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+        </div>
+        <div>
+            <h4 data-i18n="footer.legal">Legal</h4>
+            <p><a href="privacidade.html" data-i18n="footer.privacidade">Política de Privacidade e Cookies</a></p>
+        </div>
     </div>
+    <p class="footer-copy" data-i18n="footer.copy">© 2026 Hangar Creative Hub. Todos os direitos reservados.</p>
+</footer>
 
-    <!-- JavaScript Separado -->
-    <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
